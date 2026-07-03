@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Hotel H69 Location & Enquiry</title>
+  <meta name="description" content="Get in touch with Hotel H69. Find our official contact details, physical address at Marine Drive, and send a message using our validated online contact form.">
+  <meta name="keywords" content="h69 contact, hotel location, marine drive hotel, hotel h69 email, hotel phone number">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-container">
+      <a class="logo" href="index.html">H69</a>
+      <span class="logo-sub">Luxury Hotel</span>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>We are At Your Disposal 24 Hours a Day</p>
+  </div>
+</section>
+
+<main class="container section">
+  <div class="two-column">
+    <div class="info-box">
+      <h3>Official Contact Information</h3>
+      <p>Whether you require assistance with reservations, planning a custom corporate function, or arranging bespoke travel itineraries, please contact us.</p>
+      
+      <div style="margin-top: 30px;">
+        <div style="display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start;">
+          <div style="font-size: 20px; color: var(--color-accent-light);">📍</div>
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 16px; margin-bottom: 5px;">H69 Hotel Address</h4>
+            <p style="color: var(--color-text-muted); font-size: 14px;">69 Marine Drive, Luxury District, Mumbai, India - 400020</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start;">
+          <div style="font-size: 20px; color: var(--color-accent-light);">📞</div>
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 16px; margin-bottom: 5px;">Bespoke Concierge Hotline</h4>
+            <p style="color: var(--color-text-muted); font-size: 14px;">+91 22 6969 0069 (Main Desk)</p>
+            <p style="color: var(--color-text-muted); font-size: 14px;">+91 22 6969 0070 (Guest Relations)</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 15px; align-items: flex-start;">
+          <div style="font-size: 20px; color: var(--color-accent-light);">✉️</div>
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 16px; margin-bottom: 5px;">Electronic Correspondence</h4>
+            <p style="color: var(--color-text-muted); font-size: 14px;">concierge@hotelh69.com (General &amp; Stay Enquiries)</p>
+            <p style="color: var(--color-text-muted); font-size: 14px;">events@hotelh69.com (Corporate &amp; Banquets)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form utilizing Netlify Forms and detailed JS validation -->
+    <div class="calculator-box">
+      <h3 style="font-family: var(--font-serif); font-size: 24px; color: var(--color-accent-light); margin-bottom: 25px; text-align: center;">Send Us a Message</h3>
+      
+      <form id="contactForm" name="h69-contact" method="POST" data-netlify="true">
+        <!-- Netlify Forms Hidden Input -->
+        <input type="hidden" name="form-name" value="h69-contact" />
+        
+        <div class="form-group">
+          <label for="contactName">Your Name *</label>
+          <input type="text" id="contactName" name="name" placeholder="E.g. Meera Sen" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactEmail">Email Address *</label>
+          <input type="email" id="contactEmail" name="email" placeholder="E.g. meera@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactPhone">Mobile Number (10-digit) *</label>
+          <input type="tel" id="contactPhone" name="phone" placeholder="E.g. 9812345678" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contactSubject">Subject *</label>
+          <select id="contactSubject" name="subject" required>
+            <option value="general" selected>General Enquiry</option>
+            <option value="feedback">Guest Experience Feedback</option>
+            <option value="events">Events &amp; Banquets</option>
+            <option value="career">Careers / Human Resources</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactMessage">Message *</label>
+          <textarea id="contactMessage" name="message" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Send Message</button>
+        
+        <!-- Interactive JS feedback box -->
+        <div class="form-message" id="formMessage"></div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h3>H69</h3>
+      <p>An exquisite luxury hotel offering the ultimate level of refinement, contemporary aesthetics, and bespoke hospitality services.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="booking.html">Book Online</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section footer-contact">
+      <h4>Contact H69</h4>
+      <p><strong>Address:</strong> 69 Marine Drive, Luxury District, Mumbai, India</p>
+      <p><strong>Phone:</strong> +91 22 6969 0069</p>
+      <p><strong>Email:</strong> concierge@hotelh69.com</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p>© 2026 Hotel H69. Designed for MANTRA 2026 Summer School Assignment. Hosted on Netlify.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

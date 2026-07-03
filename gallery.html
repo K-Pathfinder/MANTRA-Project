@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Hotel H69 Visual Tour</title>
+  <meta name="description" content="Take a virtual tour of Hotel H69. Filter our interactive photo gallery to explore luxury rooms, fine-dining restaurants, and state-of-the-art spa/infinity pool facilities.">
+  <meta name="keywords" content="h69 gallery, luxury hotel photos, premium suite images, infinity pool, spa, fine dining photos">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-container">
+      <a class="logo" href="index.html">H69</a>
+      <span class="logo-sub">Luxury Hotel</span>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Visual Tour</h1>
+    <p>A Glimpse into the Elite Aesthetics of H69</p>
+  </div>
+</section>
+
+<main class="container section">
+  <div class="section-header">
+    <span class="section-subtitle">Exquisite Spaces</span>
+    <h2>Explore Our Sanctum</h2>
+    <p>Use the interactive filters below to view specific categories of our premier luxury spaces, private dining venues, and holistic retreat centers.</p>
+  </div>
+
+  <!-- Interactive JavaScript Filter Category Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Show All</button>
+    <button class="filter-btn" data-filter="rooms">Rooms &amp; Suites</button>
+    <button class="filter-btn" data-filter="dining">Dining &amp; Lounges</button>
+    <button class="filter-btn" data-filter="amenities">Wellness &amp; Amenities</button>
+  </div>
+
+  <!-- Filterable Grid -->
+  <div class="gallery-grid">
+    <div class="gallery-item" data-category="rooms">
+      <img src="images/room1.svg" alt="Cozy layout of Deluxe Room featuring elegant gold and slate decor at Hotel H69">
+      <div class="gallery-overlay">
+        <h3>Deluxe Room</h3>
+        <p>Rooms &amp; Suites</p>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="rooms">
+      <img src="images/room2.svg" alt="Luxury lounge area with fine chandelier inside Executive Suite of Hotel H69">
+      <div class="gallery-overlay">
+        <h3>Executive Suite</h3>
+        <p>Rooms &amp; Suites</p>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="amenities">
+      <img src="images/room3.svg" alt="Panoramic rooftop infinity pool overlooking ocean skyline at Hotel H69">
+      <div class="gallery-overlay">
+        <h3>Infinity Rooftop Pool</h3>
+        <p>Wellness &amp; Amenities</p>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="dining">
+      <!-- Use hero illustration to represent the grand dining hall entrance view -->
+      <img src="images/hero.svg" alt="Main architectural gate of Grand Dining Salon H69">
+      <div class="gallery-overlay">
+        <h3>L'Ambroisie Dining Hall</h3>
+        <p>Dining &amp; Lounges</p>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="amenities">
+      <!-- Reusing room3 layout for its premium wellness spa vibe -->
+      <img src="images/room3.svg" alt="Holistic luxury wellness spa room with ambient gold light at Hotel H69">
+      <div class="gallery-overlay">
+        <h3>Holistic Wellness Spa</h3>
+        <p>Wellness &amp; Amenities</p>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-category="dining">
+      <!-- Reusing room2 layout for its cozy cocktail lounge representation -->
+      <img src="images/room2.svg" alt="Bespoke cocktail lounge bar area with chandelier at Hotel H69">
+      <div class="gallery-overlay">
+        <h3>Amber Lounge &amp; Bar</h3>
+        <p>Dining &amp; Lounges</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h3>H69</h3>
+      <p>An exquisite luxury hotel offering the ultimate level of refinement, contemporary aesthetics, and bespoke hospitality services.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="booking.html">Book Online</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section footer-contact">
+      <h4>Contact H69</h4>
+      <p><strong>Address:</strong> 69 Marine Drive, Luxury District, Mumbai, India</p>
+      <p><strong>Phone:</strong> +91 22 6969 0069</p>
+      <p><strong>Email:</strong> concierge@hotelh69.com</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="container">
+      <p>© 2026 Hotel H69. Designed for MANTRA 2026 Summer School Assignment. Hosted on Netlify.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

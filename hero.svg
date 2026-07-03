@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="60%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="arch-clip">
+      <rect x="450" y="200" width="300" height="400" rx="150"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background Sky -->
+  <rect width="100%" height="100%" fill="url(#sky)"/>
+
+  <!-- Subtle grid pattern in background -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <path d="M 0,100 L 1200,100 M 0,200 L 1200,200 M 0,300 L 1200,300 M 0,400 L 1200,400 M 0,500 L 1200,500 M 0,600 L 1200,600 M 0,700 L 1200,700"/>
+    <path d="M 100,0 L 100,800 M 200,0 L 200,800 M 300,0 L 300,800 M 400,0 L 400,800 M 500,0 L 500,800 M 600,0 L 600,800 M 700,0 L 700,800 M 800,0 L 800,800 M 900,0 L 900,800 M 1000,0 L 1000,800 M 1100,0 L 1100,800"/>
+  </g>
+
+  <!-- Large glow behind the central illustration -->
+  <circle cx="600" cy="400" r="350" fill="url(#glow)"/>
+
+  <!-- Stars in the sky -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <circle cx="150" cy="120" r="1.5" />
+    <circle cx="280" cy="80" r="1" />
+    <circle cx="350" cy="180" r="2" />
+    <circle cx="850" cy="100" r="1.5" />
+    <circle cx="980" cy="150" r="2.5" />
+    <circle cx="1050" cy="80" r="1" />
+    <circle cx="200" cy="250" r="1" />
+    <circle cx="1000" cy="280" r="1.5" />
+  </g>
+
+  <!-- Central Arch Hotel Illustration -->
+  <g transform="translate(0, 50)">
+    <!-- Main Arch Silhouette -->
+    <rect x="450" y="150" width="300" height="450" rx="150" fill="#1E293B" stroke="url(#gold-grad)" stroke-width="3" opacity="0.9"/>
+    
+    <!-- Inside the arch: Sunset luxury view -->
+    <g clip-path="url(#arch-clip)">
+      <rect x="450" y="150" width="300" height="450" fill="#0F172A"/>
+      <!-- Sun glow -->
+      <circle cx="600" cy="450" r="120" fill="#F59E0B" opacity="0.4"/>
+      <!-- Distant Hills / Waves -->
+      <path d="M 450,500 Q 525,480 600,500 T 750,500 L 750,600 L 450,600 Z" fill="#111827"/>
+      <path d="M 450,530 Q 525,510 600,530 T 750,530 L 750,600 L 450,600 Z" fill="#030712"/>
+      
+      <!-- Lit up luxury hotel windows -->
+      <g fill="#FBBF24" opacity="0.8">
+        <!-- Tower 1 -->
+        <rect x="480" y="320" width="15" height="25" rx="2" />
+        <rect x="480" y="360" width="15" height="25" rx="2" />
+        <rect x="480" y="400" width="15" height="25" rx="2" />
+        <!-- Tower 2 (Center) -->
+        <rect x="520" y="260" width="15" height="25" rx="2" />
+        <rect x="520" y="300" width="15" height="25" rx="2" />
+        <rect x="520" y="340" width="15" height="25" rx="2" />
+        <rect x="520" y="380" width="15" height="25" rx="2" />
+        <rect x="520" y="420" width="15" height="25" rx="2" />
+        <!-- Tower 3 -->
+        <rect x="560" y="280" width="15" height="25" rx="2" />
+        <rect x="560" y="320" width="15" height="25" rx="2" />
+        <rect x="560" y="360" width="15" height="25" rx="2" />
+        <rect x="560" y="400" width="15" height="25" rx="2" />
+        <!-- Tower 4 -->
+        <rect x="600" y="320" width="15" height="25" rx="2" />
+        <rect x="600" y="360" width="15" height="25" rx="2" />
+        <rect x="600" y="400" width="15" height="25" rx="2" />
+        <!-- Tower 5 -->
+        <rect x="640" y="350" width="15" height="25" rx="2" />
+        <rect x="640" y="390" width="15" height="25" rx="2" />
+      </g>
+    </g>
+
+    <!-- Elegant Silhouette of Palms overlapping the Arch -->
+    <path d="M 400,600 Q 430,480 350,400 Q 420,440 450,600 Z" fill="#0B1329" opacity="0.95"/>
+    <path d="M 410,600 Q 450,450 510,430 Q 460,490 420,600 Z" fill="#0B1329" opacity="0.95"/>
+    <path d="M 800,600 Q 770,490 830,420 Q 760,460 750,600 Z" fill="#0B1329" opacity="0.95"/>
+
+    <!-- Decorative Gold Lines framing the sides -->
+    <path d="M 400,200 L 400,550" stroke="url(#gold-grad)" stroke-width="1" stroke-dasharray="10 5" opacity="0.5"/>
+    <path d="M 800,200 L 800,550" stroke="url(#gold-grad)" stroke-width="1" stroke-dasharray="10 5" opacity="0.5"/>
+  </g>
+
+  <!-- Typography Logo in Center of Ground -->
+  <text x="600" y="700" font-family="'Cinzel', 'Georgia', 'Playfair Display', serif" font-size="48" font-weight="bold" fill="url(#gold-grad)" text-anchor="middle" letter-spacing="8">H69</text>
+  <text x="600" y="735" font-family="'Montserrat', 'Arial', sans-serif" font-size="14" font-weight="300" fill="#94A3B8" text-anchor="middle" letter-spacing="4">LUXURY HOTEL &amp; SUITES</text>
+
+  <!-- Abstract Gold Line Design at bottom -->
+  <path d="M 450,760 L 750,760 M 550,770 L 650,770" stroke="url(#gold-grad)" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+</svg>
